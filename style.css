@@ -1,0 +1,167 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: rgba(0,0,0,0.8);
+} 
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/* Style */
+
+/* Article */
+.container-satu {
+	width: 80%;
+	margin: 50px auto;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.container-satu h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.container-satu p {
+	text-align: justify;
+}
+.article {
+	flex: 3;
+	padding: 20px;
+}
+.sidebar-dua {
+	padding: 20px;
+	flex: 2;
+}
+.nav {
+	height: 50px;
+	background-color: #555;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	/*align-items: center*/
+	padding: 30px 30px 0px 30px;
+}
+.nav li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.nav li a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Services */
+.container-dua {
+	width: 80%;
+	margin: 50px auto;
+}
+.container-dua p {
+	text-align: justify;
+}
+.services {
+	margin-bottom: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.services.one {
+	background-color: salmon;
+}
+.services.two {
+	background-color: lightblue;
+}
+.services.three {
+	background-color: limegreen;
+}
+
+/* Gallery */
+.container-tiga {
+	width: 80%;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.thumbnail {
+	width: 50%;
+}
+.thumbnail img {
+	width: 100%;
+}
+
+/* Card */
+.container-lima {
+	width: 80%;
+	margin: 50px auto;
+}
+.card {
+	margin: 20px;
+	background-color: #fff;
+	margin-top: 50px;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.card p {
+	padding: 20px;
+}
+header {
+	width: 100%;
+	height: 150px;
+	background-color: #555;
+}
+.card.besar {
+	transform: scale(1.2);
+}
+
+
+
+
+
+@media ( min-width: 600px ) {
+	
+	/* For mobile phone */
+
+	/* Article */
+	.container-satu {
+		display: flex;
+	}
+	.article {
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+	.nav {
+		margin-top: 30px;
+		background-color: transparent;
+	}
+	.nav li {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	/* Services */
+	.container-dua {
+		display: flex;
+		justify-content: space-between;
+	}
+	.services {
+		width: 30%;
+	}
+
+	.container-tiga {
+		justify-content: center;
+	}
+	/* Gallery */
+	.thumbnail {
+		width: 25%;
+	}
+
+	/* Card */
+	.container-lima {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}
